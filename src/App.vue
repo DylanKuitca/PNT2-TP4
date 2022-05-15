@@ -1,17 +1,25 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container-fluid mt-3">
+    <div class="jumbotron">
+      <h1>TP Nro 4</h1>
+      <br>
+
+      <Formulario/>
+      
+    </div>
   </div>
+
+  
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Formulario from './components/Formulario.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Formulario
   }
 }
 </script>
