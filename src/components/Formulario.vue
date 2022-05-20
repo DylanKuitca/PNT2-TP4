@@ -10,7 +10,7 @@
       <validate tag="div">
         <label for="nombre">Nombre</label>
           <input 
-          v-model="formData.nombre" 
+          v-model.trim="formData.nombre" 
           name="nombre" 
           type="text"
           class="form-control"
@@ -81,8 +81,6 @@
             </tr>
         </table>
     </div>
-
-    {{validElements}}
     
 
     </div>
@@ -103,7 +101,7 @@
       return {
         formData: this.InitFormData(),
         formState: {},
-        validElements: [{}]
+        validElements: []
 
       }
     },

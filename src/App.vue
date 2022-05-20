@@ -4,7 +4,9 @@
       <h1>TP Nro 4</h1>
       <br>
 
-      <Formulario/>
+      <Navbar/>
+      <router-view></router-view>
+     <!--  <Formulario/> -->
       
     </div>
   </div>
@@ -14,12 +16,14 @@
 </template>
 
 <script>
-import Formulario from './components/Formulario.vue'
+//import Formulario from './components/Formulario.vue'
+import Navbar from './components/Navbar.vue'
 
 export default {
   name: 'App',
   components: {
-    Formulario
+    //Formulario,
+    Navbar
   }
 }
 </script>
